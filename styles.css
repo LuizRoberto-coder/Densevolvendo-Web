@@ -50,6 +50,23 @@
   cursor: pointer;
 }
 
+.comprar-btn{
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.comprar-btn:hover{
+  background-color:var(--primary-color-dark);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .btn:hover {
   background-color: var(--primary-color-dark);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -76,6 +93,8 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ebfceb, #c8e6c9ce);
+
 }
 
 nav {
@@ -435,9 +454,8 @@ footer {
 }
 
 .footer__links a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
 }
-
 .footer__bar {
   padding: 1rem;
   font-size: 1rem;
@@ -643,4 +661,4 @@ footer {
   .discover__card {
     gap: 4rem;
   }
-}
+ } 

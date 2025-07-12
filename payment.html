@@ -1,0 +1,150 @@
+<!-- SEÇÃO DE PAGAMENTO -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagamento</title>
+    <link rel="stylesheet" href="style_payment.css">
+    <link rel="shortcut icon" href="favicon_gellato.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- formulario para efetuação de compra. -->
+        <form id="form-pagamento" action="#">
+
+            <div class="row">
+
+                <div class="col">
+                    <h3 class="title">
+                        Endereço de Cobrança
+                    </h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                            Nome Completo:
+                        </label>
+                        <input type="text" id="name" placeholder="Nome Completo" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="text" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="address">
+                            Endereço:
+                        </label>
+                        <input type="text" id="address" placeholder="Endereco" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="city">
+                            Cidade:
+                        </label>
+                        <input type="text" id="city" placeholder="Cidade" required>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <label for="state">
+                                Estado:
+                            </label>
+                            <input type="text" id="state" placeholder="Estado" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="zip">
+                                 CEP:
+                            </label>
+                            <input type="number" id="zip" placeholder="123 456" required>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3 class="title">pagamento</h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                           Aceita cartão:
+                        </label>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240715140014/Online-Payment-Project.webp"
+                            alt="credit/debit card image">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Nome do cartão:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Nome do cartão" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardNum">
+                           Numero no cartão de crédito:
+                        </label>
+                        <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Mês:</label>
+                        <select name="" id="">
+                            <option value="">Escolha o Mês</option>
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Marco">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Exp Year:</label>
+                            <select name="" id="">
+                                <option value="">Escolha o Ano</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="cvv">CVV</label>
+                            <input type="number" id="cvv" placeholder="1234" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Proceed to Checkout" class="submit_btn">
+        </form>
+
+    </div>
+    <script type="text/javascript" src="payment.js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+// ANIMAÇÃO DA HEADER PARA APARELHOS DE TELAS MENORES
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -16,7 +17,7 @@ navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-3-line");
 });
-
+// ANIMAÇÃO DOS ELEMENTOS DA PAGINA  
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
@@ -97,3 +98,37 @@ ScrollReveal().reveal(".subscribe__content form", {
   ...scrollRevealOption,
   delay: 1000,
 });
+// REDIRECIONAMENTO PARA A ABA DE LOGIN
+const loginBtn = document.getElementById("login-btn");
+if (loginBtn) {
+  loginBtn.addEventListener("click", () => {
+  window.open("login.html", "_blank",);
+  });
+}
+
+//REDIRECIONAMENTO PARA A ABA DE PAGAMENTO
+const comprar = document.querySelectorAll(".comprar-btn");
+
+comprar.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    window.open("payment.html", "_blank",);
+  });
+});
+
+// REDIRECIONAMENTO PARA WHATSAPP
+
+const numero = '5582996148084'; 
+
+  
+  const mensagem = 'Olá! Gostaria de mais informações.';
+
+ 
+    const links = document.querySelectorAll('.whatsapp-link');
+
+    links.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensagem)}`;
+        window.open(url, '_blank');
+      });
+    });
